@@ -17,15 +17,15 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
             src="/images/brand/sax/sax-logo-primary.png"
             alt="SAX Group"
-            width={150}
-            height={44}
-            className="h-11 w-auto"
+            width={160}
+            height={48}
+            className="h-12 w-auto"
             priority
           />
         </Link>
