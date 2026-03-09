@@ -13,11 +13,11 @@ export default function Footer() {
     <footer className="bg-[#111111] text-white border-t-2 border-[#C84B3A]">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 items-start">
             <img
               src="/images/brand/sax/sax-logo-white.png"
               alt="SAX Group"
-              className="block h-16 w-auto"
+              className="block h-16 w-auto object-contain"
             />
             <p className="max-w-xs text-sm leading-relaxed text-[#999999]">
               SAX Group helps Latin American companies establish and grow their
