@@ -4,38 +4,38 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0A2342] text-white py-20 px-6">
+      <section className="bg-white py-20 px-6 border-b border-gray-100">
         <div className="max-w-4xl mx-auto">
-          <p className="text-[#00BFA6] text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#C84B3A] mb-5">
             Contact
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#111111] leading-tight mb-6">
             Get in Touch
           </h1>
-          <p className="text-lg text-slate-300 max-w-2xl leading-relaxed">
+          <p className="text-lg text-[#555555] max-w-2xl leading-relaxed">
             Ready to expand your business to the United States? Fill out the form below and a member of our team will be in touch.
           </p>
         </div>
       </section>
 
       {/* Contact Form */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-[#F5F5F5] py-20 px-6">
         <div className="max-w-2xl mx-auto">
-          <form className="flex flex-col gap-6">
+          <form className="bg-white rounded-lg border border-gray-200 p-8 flex flex-col gap-6">
             {/* Name */}
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="name"
-                className="text-sm font-medium text-[#0A2342]"
+                className="text-sm font-medium text-[#111111]"
               >
-                Name <span className="text-[#00BFA6]">*</span>
+                Name <span className="text-[#C84B3A]">*</span>
               </label>
               <input
                 id="name"
                 name="name"
                 type="text"
                 placeholder="Your full name"
-                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#00BFA6] focus:border-transparent transition"
+                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#111111] placeholder:text-[#aaaaaa] focus:outline-none focus:ring-2 focus:ring-[#C84B3A] focus:border-transparent transition"
               />
             </div>
 
@@ -43,16 +43,16 @@ export default function ContactPage() {
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="email"
-                className="text-sm font-medium text-[#0A2342]"
+                className="text-sm font-medium text-[#111111]"
               >
-                Email <span className="text-[#00BFA6]">*</span>
+                Email <span className="text-[#C84B3A]">*</span>
               </label>
               <input
                 id="email"
                 name="email"
                 type="email"
                 placeholder="your@email.com"
-                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#00BFA6] focus:border-transparent transition"
+                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#111111] placeholder:text-[#aaaaaa] focus:outline-none focus:ring-2 focus:ring-[#C84B3A] focus:border-transparent transition"
               />
             </div>
 
@@ -60,7 +60,7 @@ export default function ContactPage() {
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="company"
-                className="text-sm font-medium text-[#0A2342]"
+                className="text-sm font-medium text-[#111111]"
               >
                 Company
               </label>
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 name="company"
                 type="text"
                 placeholder="Your company name"
-                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#00BFA6] focus:border-transparent transition"
+                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#111111] placeholder:text-[#aaaaaa] focus:outline-none focus:ring-2 focus:ring-[#C84B3A] focus:border-transparent transition"
               />
             </div>
 
@@ -77,7 +77,7 @@ export default function ContactPage() {
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="country"
-                className="text-sm font-medium text-[#0A2342]"
+                className="text-sm font-medium text-[#111111]"
               >
                 Country
               </label>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                 name="country"
                 type="text"
                 placeholder="Your country"
-                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#00BFA6] focus:border-transparent transition"
+                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#111111] placeholder:text-[#aaaaaa] focus:outline-none focus:ring-2 focus:ring-[#C84B3A] focus:border-transparent transition"
               />
             </div>
 
@@ -94,16 +94,16 @@ export default function ContactPage() {
             <div className="flex flex-col gap-1.5">
               <label
                 htmlFor="message"
-                className="text-sm font-medium text-[#0A2342]"
+                className="text-sm font-medium text-[#111111]"
               >
-                Message <span className="text-[#00BFA6]">*</span>
+                Message <span className="text-[#C84B3A]">*</span>
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows={5}
                 placeholder="Tell us about your business and how we can help"
-                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#00BFA6] focus:border-transparent transition resize-none"
+                className="border border-gray-200 rounded-md px-4 py-3 text-sm text-[#111111] placeholder:text-[#aaaaaa] focus:outline-none focus:ring-2 focus:ring-[#C84B3A] focus:border-transparent transition resize-none"
               />
             </div>
 
@@ -111,11 +111,11 @@ export default function ContactPage() {
             <div>
               <button
                 type="submit"
-                className="w-full sm:w-auto bg-[#00BFA6] hover:bg-[#00a994] text-white font-semibold px-8 py-3.5 rounded-md transition-colors text-sm"
+                className="w-full sm:w-auto bg-[#C84B3A] hover:bg-[#b03e2e] text-white font-semibold px-8 py-3.5 rounded-md transition-colors text-sm"
               >
                 Send Message
               </button>
-              <p className="mt-3 text-xs text-[#475569]">
+              <p className="mt-3 text-xs text-[#555555]">
                 {/* TODO: connect form submission */}
                 We will get back to you as soon as possible.
               </p>
@@ -125,10 +125,10 @@ export default function ContactPage() {
       </section>
 
       {/* Location note */}
-      <section className="bg-[#F8FAFC] py-12 px-6">
+      <section className="bg-white py-12 px-6 border-t border-gray-200">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-sm text-[#475569]">
-            <span className="font-semibold text-[#0A2342]">SAX Group LLC</span>
+          <p className="text-sm text-[#555555]">
+            <span className="font-semibold text-[#111111]">SAX Group LLC</span>
             {" · "}Orlando, Florida, United States
           </p>
         </div>

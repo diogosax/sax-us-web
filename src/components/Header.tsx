@@ -16,7 +16,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
@@ -36,7 +36,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[#0A2342] hover:text-[#00BFA6] transition-colors"
+              className="text-sm font-medium text-[#111111] hover:text-[#C84B3A] transition-colors"
             >
               {link.label}
             </Link>
@@ -47,13 +47,13 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-4">
           <Link
             href="/pt/sax-global"
-            className="text-xs font-medium text-[#475569] hover:text-[#0A2342] transition-colors"
+            className="text-xs font-medium text-[#555555] hover:text-[#111111] transition-colors"
           >
             PT
           </Link>
           <Link
             href="/contact"
-            className="bg-[#00BFA6] hover:bg-[#00a994] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
+            className="bg-[#C84B3A] hover:bg-[#b03e2e] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
           >
             Schedule a Consultation
           </Link>
@@ -61,7 +61,7 @@ export default function Header() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-[#0A2342]"
+          className="md:hidden p-2 text-[#111111]"
           onClick={() => setMobileOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
@@ -79,12 +79,12 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden border-t border-gray-200 bg-white px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[#0A2342] hover:text-[#00BFA6] transition-colors"
+              className="text-sm font-medium text-[#111111] hover:text-[#C84B3A] transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
@@ -92,14 +92,14 @@ export default function Header() {
           ))}
           <Link
             href="/pt/sax-global"
-            className="text-xs font-medium text-[#475569]"
+            className="text-xs font-medium text-[#555555]"
             onClick={() => setMobileOpen(false)}
           >
             Ver em Português
           </Link>
           <Link
             href="/contact"
-            className="bg-[#00BFA6] hover:bg-[#00a994] text-white text-sm font-semibold px-5 py-2.5 rounded-md text-center transition-colors"
+            className="bg-[#C84B3A] hover:bg-[#b03e2e] text-white text-sm font-semibold px-5 py-2.5 rounded-md text-center transition-colors"
             onClick={() => setMobileOpen(false)}
           >
             Schedule a Consultation

@@ -11,7 +11,7 @@ const navLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A2342] text-white">
+    <footer className="bg-[#111111] text-white">
       <div className="max-w-6xl mx-auto px-6 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand column */}
@@ -23,14 +23,14 @@ export default function Footer() {
               height={40}
               className="h-9 w-auto"
             />
-            <p className="text-sm text-slate-300 leading-relaxed max-w-xs">
+            <p className="text-sm text-[#888888] leading-relaxed max-w-xs">
               SAX Group helps Latin American companies establish and grow their operations in the United States.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-4">
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-[#666666] mb-4">
               Navigation
             </h4>
             <ul className="flex flex-col gap-2.5">
@@ -38,7 +38,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate-300 hover:text-[#00BFA6] transition-colors"
+                    className="text-sm text-[#888888] hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -49,29 +49,29 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-4">
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-[#666666] mb-4">
               Get in Touch
             </h4>
-            <p className="text-sm text-slate-300 mb-3">
+            <p className="text-sm text-[#888888] mb-4">
               Orlando, Florida<br />
               United States
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-[#00BFA6] hover:bg-[#00a994] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
+              className="inline-block bg-[#C84B3A] hover:bg-[#b03e2e] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
             >
               Schedule a Consultation
             </Link>
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-slate-700 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-slate-400">
+        <div className="mt-12 pt-6 border-t border-[#2a2a2a] flex flex-col md:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-[#666666]">
             © {new Date().getFullYear()} SAX Group LLC. All rights reserved.
           </p>
           <Link
             href="/pt/sax-global"
-            className="text-xs text-slate-400 hover:text-[#00BFA6] transition-colors"
+            className="text-xs text-[#666666] hover:text-white transition-colors"
           >
             Ver em Português
           </Link>

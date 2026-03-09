@@ -72,24 +72,27 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0A2342] text-white py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+      <section className="bg-white py-24 px-6 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#C84B3A] mb-5">
+            SAX Group
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#111111] leading-tight mb-6">
             Expand Your Business<br className="hidden md:block" /> to the United States
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[#555555] mb-10 max-w-2xl leading-relaxed">
             SAX Group helps Latin American companies establish and operate in the U.S. — from company formation to full operational setup.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="bg-[#00BFA6] hover:bg-[#00a994] text-white font-semibold px-8 py-3.5 rounded-md transition-colors text-sm"
+              className="bg-[#C84B3A] hover:bg-[#b03e2e] text-white font-semibold px-8 py-3.5 rounded-md transition-colors text-sm inline-block"
             >
               Schedule a Consultation
             </Link>
             <Link
               href="/sax-global"
-              className="border border-white text-white hover:bg-white hover:text-[#0A2342] font-semibold px-8 py-3.5 rounded-md transition-colors text-sm"
+              className="border border-[#111111] text-[#111111] hover:bg-[#111111] hover:text-white font-semibold px-8 py-3.5 rounded-md transition-colors text-sm inline-block"
             >
               Learn More
             </Link>
@@ -98,11 +101,11 @@ export default function HomePage() {
       </section>
 
       {/* What We Do */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-[#F5F5F5] py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-[#0A2342] mb-4">What We Do</h2>
-            <p className="text-[#475569] max-w-xl mx-auto leading-relaxed">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-[#111111] mb-4">What We Do</h2>
+            <p className="text-[#555555] max-w-xl leading-relaxed">
               We provide the structure and support that Latin American businesses need to enter and thrive in the U.S. market.
             </p>
           </div>
@@ -110,12 +113,13 @@ export default function HomePage() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="bg-[#F8FAFC] rounded-lg p-6 border border-gray-100"
+                className="bg-white rounded-lg p-6 border border-gray-200"
               >
-                <h3 className="text-base font-semibold text-[#0A2342] mb-3">
+                <div className="w-6 h-0.5 bg-[#C84B3A] mb-4" />
+                <h3 className="text-base font-semibold text-[#111111] mb-3">
                   {service.title}
                 </h3>
-                <p className="text-sm text-[#475569] leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -125,11 +129,11 @@ export default function HomePage() {
       </section>
 
       {/* Our Companies */}
-      <section className="bg-[#F8FAFC] py-20 px-6">
+      <section className="bg-white py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-[#0A2342] mb-4">Our Companies</h2>
-            <p className="text-[#475569] max-w-xl mx-auto leading-relaxed">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-[#111111] mb-4">Our Companies</h2>
+            <p className="text-[#555555] max-w-xl leading-relaxed">
               SAX Group is home to a portfolio of companies operating across different sectors in the U.S.
             </p>
           </div>
@@ -137,7 +141,7 @@ export default function HomePage() {
             {companies.map((company) => (
               <div
                 key={company.name}
-                className="bg-white rounded-lg p-8 border border-gray-100 flex flex-col items-center text-center gap-4"
+                className="bg-[#F5F5F5] rounded-lg p-8 border border-gray-200 flex flex-col items-center text-center gap-4"
               >
                 <div className="h-12 flex items-center justify-center">
                   <Image
@@ -149,20 +153,20 @@ export default function HomePage() {
                   />
                 </div>
                 {company.status && (
-                  <span className="text-xs font-semibold uppercase tracking-widest text-[#00BFA6] bg-[#00BFA6]/10 px-3 py-1 rounded-full">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-[#C84B3A] bg-[#C84B3A]/10 px-3 py-1 rounded-full">
                     {company.status}
                   </span>
                 )}
-                <p className="text-sm text-[#475569] leading-relaxed">
+                <p className="text-sm text-[#555555] leading-relaxed">
                   {company.description}
                 </p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
+          <div className="mt-10">
             <Link
               href="/our-companies"
-              className="text-sm font-semibold text-[#00BFA6] hover:underline"
+              className="text-sm font-semibold text-[#C84B3A] hover:underline"
             >
               View all companies →
             </Link>
@@ -171,26 +175,23 @@ export default function HomePage() {
       </section>
 
       {/* Why SAX */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-[#F5F5F5] py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-[#0A2342] mb-4">Why SAX</h2>
-            <p className="text-[#475569] max-w-xl mx-auto leading-relaxed">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-[#111111] mb-4">Why SAX</h2>
+            <p className="text-[#555555] max-w-xl leading-relaxed">
               We combine deep cross-border knowledge with hands-on operational support.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {whySax.map((item) => (
-              <div key={item.title} className="flex gap-4">
-                <div className="w-1.5 shrink-0 rounded-full bg-[#00BFA6] mt-1" />
-                <div>
-                  <h3 className="text-base font-semibold text-[#0A2342] mb-1.5">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-[#475569] leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
+              <div key={item.title} className="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 className="text-base font-semibold text-[#111111] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-[#555555] leading-relaxed">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -198,17 +199,17 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-[#0A2342] py-20 px-6 text-white text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-5">
+      <section className="bg-white py-20 px-6 border-t border-gray-200">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-[#111111] mb-5">
             Ready to Start Your U.S. Expansion?
           </h2>
-          <p className="text-slate-300 mb-8 leading-relaxed">
+          <p className="text-[#555555] mb-8 leading-relaxed">
             Talk to our team and find out how SAX Group can help you build a solid business foundation in the United States.
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-[#00BFA6] hover:bg-[#00a994] text-white font-semibold px-8 py-3.5 rounded-md transition-colors text-sm"
+            className="inline-block bg-[#C84B3A] hover:bg-[#b03e2e] text-white font-semibold px-8 py-3.5 rounded-md transition-colors text-sm"
           >
             Schedule a Consultation
           </Link>
