@@ -5,21 +5,24 @@ const companies = [
   {
     name: "KeepsAlive",
     logo: "/images/brand/keepsalive/keepsalive-logo-primary.png",
-    description: "TODO: content to be confirmed",
+    description:
+      "An asset monitoring and operational intelligence initiative currently in development.",
     status: "Coming Soon",
     href: null,
   },
   {
     name: "UniHub",
     logo: "/images/brand/unihub/unihub-logo-primary.png",
-    description: "TODO: content to be confirmed",
+    description:
+      "An education and international business integration platform supporting cross-border opportunities for academic and professional advancement.",
     status: null,
     href: null,
   },
   {
     name: "Office Today",
     logo: "/images/brand/office-today/office-today-logo-primary.png",
-    description: "TODO: content to be confirmed",
+    description:
+      "Technical support and operational solutions for managed print environments and office infrastructure.",
     status: null,
     href: null,
   },
@@ -38,7 +41,7 @@ export default function OurCompaniesPage() {
             The SAX Ecosystem
           </h1>
           <p className="text-lg text-[#555555] max-w-2xl leading-relaxed">
-            SAX Group brings together a portfolio of companies operating across different sectors in the United States. Each company is built with the same commitment to execution and quality.
+            SAX Group brings together a portfolio of companies and initiatives operating across different sectors in the United States. Each is built on the same foundation of execution and operational discipline.
           </p>
         </div>
       </section>
@@ -50,16 +53,16 @@ export default function OurCompaniesPage() {
             {companies.map((company) => (
               <div
                 key={company.name}
-                className="bg-white rounded-lg border border-gray-200 p-8 flex flex-col gap-5"
+                className="bg-white rounded-lg border border-gray-200 p-8 flex flex-col gap-6"
               >
                 {/* Logo */}
-                <div className="h-14 flex items-center">
+                <div className="h-16 flex items-start">
                   <Image
                     src={company.logo}
                     alt={company.name}
-                    width={160}
-                    height={56}
-                    className="h-12 w-auto object-contain"
+                    width={180}
+                    height={64}
+                    className="h-14 w-auto object-contain"
                   />
                 </div>
 
@@ -75,7 +78,7 @@ export default function OurCompaniesPage() {
                   {company.description}
                 </p>
 
-                {/* Link */}
+                {/* Link or coming soon note */}
                 {company.href ? (
                   <Link
                     href={company.href}
@@ -84,8 +87,8 @@ export default function OurCompaniesPage() {
                     Learn more →
                   </Link>
                 ) : company.status === "Coming Soon" ? (
-                  <span className="text-xs text-[#555555]">
-                    More details coming soon.
+                  <span className="text-xs text-[#aaaaaa]">
+                    More information will be available soon.
                   </span>
                 ) : null}
               </div>
@@ -101,7 +104,7 @@ export default function OurCompaniesPage() {
             Interested in Working With SAX?
           </h2>
           <p className="text-[#555555] mb-8 leading-relaxed">
-            If you are a Latin American company looking to expand to the United States, we&apos;d like to hear from you.
+            If you are a Latin American company looking to establish a presence in the United States, we would like to hear from you.
           </p>
           <Link
             href="/contact"

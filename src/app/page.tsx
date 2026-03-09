@@ -3,24 +3,24 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Company Formation",
+    title: "Entity Formation",
     description:
-      "We guide you through the entire process of incorporating your U.S. entity — LLC or C-Corp — with the structure that fits your business goals.",
+      "LLC or C-Corp — we determine the right structure for your business profile and handle the full incorporation process across the appropriate U.S. state.",
   },
   {
-    title: "Banking & Financial Setup",
+    title: "Banking & Financial Access",
     description:
-      "We help you open a U.S. business bank account and establish the financial infrastructure needed to operate from day one.",
+      "A U.S. bank account is foundational. We navigate the process with you, preparing your documentation and connecting you with the right financial institutions.",
   },
   {
-    title: "Legal & Accounting",
+    title: "Legal & Accounting Coordination",
     description:
-      "We coordinate with specialized U.S. attorneys and accountants to ensure your business is compliant from the start.",
+      "We work alongside specialized U.S. attorneys and CPAs to ensure your business is structured correctly and compliant from the outset.",
   },
   {
-    title: "Immigration Strategy",
+    title: "Immigration Planning",
     description:
-      "For founders and executives relocating to the U.S., we help structure the right immigration approach for your situation.",
+      "For founders and executives planning to relocate, we coordinate with immigration attorneys to evaluate the right visa path for your situation.",
   },
 ];
 
@@ -28,43 +28,46 @@ const companies = [
   {
     name: "KeepsAlive",
     logo: "/images/brand/keepsalive/keepsalive-logo-primary.png",
-    description: "TODO: content to be confirmed",
+    description:
+      "An asset monitoring and operational intelligence initiative currently in development.",
     status: "Coming Soon",
   },
   {
     name: "UniHub",
     logo: "/images/brand/unihub/unihub-logo-primary.png",
-    description: "TODO: content to be confirmed",
+    description:
+      "An education and international business integration platform supporting cross-border opportunities for academic and professional advancement.",
     status: null,
   },
   {
     name: "Office Today",
     logo: "/images/brand/office-today/office-today-logo-primary.png",
-    description: "TODO: content to be confirmed",
+    description:
+      "Technical support and operational solutions for managed print environments and office infrastructure.",
     status: null,
   },
 ];
 
 const whySax = [
   {
-    title: "Cross-Border Expertise",
+    title: "Operational, Not Just Advisory",
     description:
-      "We understand the regulatory, cultural, and operational challenges that Latin American companies face when entering the U.S. market.",
+      "Most consultants tell you what to do. We work alongside you to make sure it actually gets done — from entity formation and banking to compliance and day-to-day operational setup.",
   },
   {
-    title: "End-to-End Support",
+    title: "Built Around Latin American Businesses",
     description:
-      "From company formation to ongoing operations, we cover every step so you can focus on growing your business.",
+      "We understand the regulatory, banking, and structural differences that Latin American companies face when entering the U.S. Our approach is grounded in direct cross-border experience.",
   },
   {
-    title: "Practical Execution",
+    title: "One Coordinated Process",
     description:
-      "We are operationally focused. We don't just advise — we help you get things done.",
+      "Legal, accounting, banking, and immigration rarely happen in isolation. We coordinate across all disciplines so your U.S. setup moves forward as a single organized effort.",
   },
   {
-    title: "Long-Term Partnership",
+    title: "Present Beyond the Launch",
     description:
-      "We build lasting relationships with our clients, adapting as your U.S. operations evolve and scale.",
+      "We don't close the file after incorporation. We remain a consistent point of support as your U.S. business grows and its operational needs evolve.",
   },
 ];
 
@@ -78,10 +81,10 @@ export default function HomePage() {
             SAX Group
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-[#111111] leading-tight mb-6">
-            Expand Your Business<br className="hidden md:block" /> to the United States
+            The U.S. Business Platform<br className="hidden md:block" /> for Latin American Companies
           </h1>
           <p className="text-lg text-[#555555] mb-10 max-w-2xl leading-relaxed">
-            SAX Group helps Latin American companies establish and operate in the U.S. — from company formation to full operational setup.
+            We handle the structure — entity formation, banking, legal coordination, accounting, and operational setup — so your company can enter the U.S. market with the right foundation in place.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -94,7 +97,7 @@ export default function HomePage() {
               href="/sax-global"
               className="border border-[#111111] text-[#111111] hover:bg-[#111111] hover:text-white font-semibold px-8 py-3.5 rounded-md transition-colors text-sm inline-block"
             >
-              Learn More
+              How We Work
             </Link>
           </div>
         </div>
@@ -106,7 +109,7 @@ export default function HomePage() {
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-[#111111] mb-4">What We Do</h2>
             <p className="text-[#555555] max-w-xl leading-relaxed">
-              We provide the structure and support that Latin American businesses need to enter and thrive in the U.S. market.
+              Entering the U.S. market requires more than ambition. It requires the right legal structure, financial infrastructure, and local coordination. That is what we build with you.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -134,22 +137,22 @@ export default function HomePage() {
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-[#111111] mb-4">Our Companies</h2>
             <p className="text-[#555555] max-w-xl leading-relaxed">
-              SAX Group is home to a portfolio of companies operating across different sectors in the U.S.
+              SAX Group is home to a portfolio of companies and initiatives operating across different sectors in the United States.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {companies.map((company) => (
               <div
                 key={company.name}
-                className="bg-[#F5F5F5] rounded-lg p-8 border border-gray-200 flex flex-col items-center text-center gap-4"
+                className="bg-[#F5F5F5] rounded-lg p-8 border border-gray-200 flex flex-col items-start gap-5"
               >
-                <div className="h-12 flex items-center justify-center">
+                <div className="h-16 flex items-center">
                   <Image
                     src={company.logo}
                     alt={company.name}
-                    width={140}
-                    height={48}
-                    className="h-10 w-auto object-contain"
+                    width={160}
+                    height={64}
+                    className="h-14 w-auto object-contain"
                   />
                 </div>
                 {company.status && (
@@ -180,7 +183,7 @@ export default function HomePage() {
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-[#111111] mb-4">Why SAX</h2>
             <p className="text-[#555555] max-w-xl leading-relaxed">
-              We combine deep cross-border knowledge with hands-on operational support.
+              We work with Latin American companies at every stage of U.S. market entry — from the first legal question to ongoing operational management.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -202,10 +205,10 @@ export default function HomePage() {
       <section className="bg-white py-20 px-6 border-t border-gray-200">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-[#111111] mb-5">
-            Ready to Start Your U.S. Expansion?
+            Ready to Build Your U.S. Presence?
           </h2>
           <p className="text-[#555555] mb-8 leading-relaxed">
-            Talk to our team and find out how SAX Group can help you build a solid business foundation in the United States.
+            Talk to our team. We will assess your situation and explain how SAX Group can support your U.S. market entry from day one.
           </p>
           <Link
             href="/contact"

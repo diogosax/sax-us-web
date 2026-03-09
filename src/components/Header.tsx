@@ -23,9 +23,9 @@ export default function Header() {
           <Image
             src="/images/brand/sax/sax-logo-primary.png"
             alt="SAX Group"
-            width={120}
-            height={40}
-            className="h-9 w-auto"
+            width={140}
+            height={48}
+            className="h-10 w-auto"
             priority
           />
         </Link>
@@ -44,13 +44,23 @@ export default function Header() {
         </nav>
 
         {/* Desktop CTA + language switcher */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link
-            href="/pt/sax-global"
-            className="text-xs font-medium text-[#555555] hover:text-[#111111] transition-colors"
-          >
-            PT
-          </Link>
+        <div className="hidden md:flex items-center gap-5">
+          {/* EN | PT switcher */}
+          <div className="flex items-center gap-1.5 text-xs font-medium">
+            <Link
+              href="/sax-global"
+              className="text-[#111111] hover:text-[#C84B3A] transition-colors"
+            >
+              EN
+            </Link>
+            <span className="text-[#cccccc]">|</span>
+            <Link
+              href="/pt/sax-global"
+              className="text-[#555555] hover:text-[#C84B3A] transition-colors"
+            >
+              PT
+            </Link>
+          </div>
           <Link
             href="/contact"
             className="bg-[#C84B3A] hover:bg-[#b03e2e] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
@@ -79,7 +89,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden border-t border-gray-200 bg-white px-6 py-5 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -90,13 +100,23 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/pt/sax-global"
-            className="text-xs font-medium text-[#555555]"
-            onClick={() => setMobileOpen(false)}
-          >
-            Ver em Português
-          </Link>
+          <div className="flex items-center gap-2 pt-1">
+            <Link
+              href="/sax-global"
+              className="text-xs font-medium text-[#111111]"
+              onClick={() => setMobileOpen(false)}
+            >
+              EN
+            </Link>
+            <span className="text-[#cccccc] text-xs">|</span>
+            <Link
+              href="/pt/sax-global"
+              className="text-xs font-medium text-[#555555]"
+              onClick={() => setMobileOpen(false)}
+            >
+              PT
+            </Link>
+          </div>
           <Link
             href="/contact"
             className="bg-[#C84B3A] hover:bg-[#b03e2e] text-white text-sm font-semibold px-5 py-2.5 rounded-md text-center transition-colors"
