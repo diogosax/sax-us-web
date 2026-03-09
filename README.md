@@ -1,92 +1,36 @@
-# sax-us-web
-SAX US Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Official website for SAX Group LLC – focused on international expansion services for Latin American companies entering the United States.
+## Getting Started
 
-This repository contains the source code for the sax-us.com marketing website.
+First, run the development server:
 
-⸻
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Overview
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The site presents SAX Global’s services and positioning in the U.S. market, including:
-	•	Company setup in the United States
-	•	Legal and accounting structuring
-	•	Logistics and operational support
-	•	Immigration strategy for entrepreneurs and executives
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-The website is designed to be fast, simple, and maintainable, following a modern startup-style stack.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-⸻
+## Learn More
 
-Tech Stack
-	•	Next.js
-	•	TypeScript
-	•	Tailwind CSS
-	•	Vercel for hosting and deployment
-	•	GitHub for version control
+To learn more about Next.js, take a look at the following resources:
 
-⸻
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Deployment
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-The website is automatically deployed through Vercel.
+## Deploy on Vercel
 
-Workflow:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-GitHub → Vercel → Production
-	•	Every push to main triggers a production deployment.
-	•	Pull requests generate preview environments.
-
-⸻
-
-Repository Structure
-
-src/
-  app/
-  components/
-  content/
-  lib/
-
-public/
-  images/
-
-Explanation:
-	•	app/ – Next.js routes and pages
-	•	components/ – UI components and page sections
-	•	content/ – editable content (text and structured data)
-	•	lib/ – utilities and helpers
-	•	public/ – static assets
-
-⸻
-
-Development Workflow
-
-Project workflow follows a simple startup model:
-
-Architecture and planning: SAX Team
-Implementation: AI-assisted development (Claude Code)
-Infrastructure: Vercel + GitHub
-
-Typical change flow:
-	1.	Feature request or improvement
-	2.	Implementation via AI-assisted coding
-	3.	Commit and push to GitHub
-	4.	Automatic deploy via Vercel
-
-⸻
-
-Maintained By
-
-SAX Group LLC
-
-Orlando, Florida
-United States
-
-https://www.sax-us.com
-
-⸻
-
-License
-
-MIT
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
