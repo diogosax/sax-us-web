@@ -12,30 +12,30 @@ export default function Footer() {
   return (
     <footer className="bg-[#111111] text-white border-t-2 border-[#C84B3A]">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Brand column */}
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           <div className="flex flex-col gap-5">
             <img
               src="/images/brand/sax/sax-logo-white.png"
               alt="SAX Group"
-              className="h-12 w-auto"
+              className="block h-16 w-auto"
             />
-            <p className="text-sm text-[#999999] leading-relaxed max-w-xs">
-              SAX Group helps Latin American companies establish and grow their operations in the United States.
+            <p className="max-w-xs text-sm leading-relaxed text-[#999999]">
+              SAX Group helps Latin American companies establish and grow their
+              operations in the United States.
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
-            <h4 className="text-[11px] font-semibold uppercase tracking-widest text-[#555555] mb-5">
+            <h4 className="mb-5 text-[11px] font-semibold uppercase tracking-widest text-[#555555]">
               Navigation
             </h4>
+
             <ul className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-[#888888] hover:text-white transition-colors"
+                    className="text-sm text-[#CCCCCC] transition-colors hover:text-white"
                   >
                     {link.label}
                   </Link>
@@ -44,35 +44,29 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="text-[11px] font-semibold uppercase tracking-widest text-[#555555] mb-5">
-              Get in Touch
+            <h4 className="mb-5 text-[11px] font-semibold uppercase tracking-widest text-[#555555]">
+              Get in touch
             </h4>
-            <p className="text-sm text-[#888888] mb-1">Orlando, Florida</p>
-            <p className="text-sm text-[#888888] mb-6">United States</p>
-            <Link
-              href="/contact"
-              className="inline-block bg-[#C84B3A] hover:bg-[#b03e2e] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
+
+            <p className="mb-6 text-sm leading-relaxed text-[#CCCCCC]">
+              Orlando, Florida
+              <br />
+              United States
+            </p>
+
+            <a
+              href="#"
+              className="inline-block rounded-md bg-[#C84B3A] px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-[#b33f30]"
             >
               Schedule a Consultation
-            </Link>
+            </a>
           </div>
         </div>
 
-        <div className="mt-14 pt-6 border-t border-[#222222] flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-[#555555]">
-            © {new Date().getFullYear()} SAX Group LLC. All rights reserved.
-          </p>
-          <div className="flex items-center gap-1.5 text-xs">
-            <Link href="/sax-global" className="text-[#555555] hover:text-white transition-colors">
-              EN
-            </Link>
-            <span className="text-[#333333]">|</span>
-            <Link href="/pt/sax-global" className="text-[#555555] hover:text-white transition-colors">
-              PT
-            </Link>
-          </div>
+        <div className="mt-12 flex items-center justify-between border-t border-[#2a2a2a] pt-6 text-xs text-[#777777]">
+          <span>© 2026 SAX Group LLC. All rights reserved.</span>
+          <span>EN | PT</span>
         </div>
       </div>
     </footer>
