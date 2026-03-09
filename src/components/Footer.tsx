@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
@@ -16,12 +15,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand column */}
           <div className="flex flex-col gap-5">
-            <Image
+            <img
               src="/images/brand/sax/sax-logo-white.png"
               alt="SAX Group"
-              width={500}
-              height={200}
-              className="h-14 w-auto"
+              className="h-12 w-auto"
             />
             <p className="text-sm text-[#999999] leading-relaxed max-w-xs">
               SAX Group helps Latin American companies establish and grow their operations in the United States.
