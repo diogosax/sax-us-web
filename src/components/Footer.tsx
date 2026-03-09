@@ -19,9 +19,9 @@ export default function Footer() {
             <Image
               src="/images/brand/sax/sax-logo-white.png"
               alt="SAX Group"
-              width={150}
-              height={50}
-              className="h-11 w-auto"
+              width={160}
+              height={48}
+              className="h-12 w-auto"
             />
             <p className="text-sm text-[#999999] leading-relaxed max-w-xs">
               SAX Group helps Latin American companies establish and grow their operations in the United States.
