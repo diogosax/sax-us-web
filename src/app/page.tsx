@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const services = [
@@ -27,21 +26,24 @@ const services = [
 const companies = [
   {
     name: "KeepsAlive",
-    logo: "/images/brand/keepsalive/keepsalive-logo-primary.png",
+    logo: "/images/brand/keepsalive/keepsalive-logo-primary.svg",
+    logoClassName: "h-7 w-auto object-contain",
     description:
       "An asset monitoring and operational intelligence initiative currently in development.",
     status: "Coming Soon",
   },
   {
     name: "UniHub",
-    logo: "/images/brand/unihub/unihub-logo-primary.png",
+    logo: "/images/brand/unihub/unihub-logo-primary.svg",
+    logoClassName: "h-10 w-auto object-contain",
     description:
-      "An education and international business integration platform supporting cross-border opportunities for academic and professional advancement.",
+      "An education and international business integration platform supporting cross-border opportunities for academic and professional growth.",
     status: null,
   },
   {
     name: "Office Today",
-    logo: "/images/brand/office-today/office-today-logo-primary.png",
+    logo: "/images/brand/office-today/office-today-logo-primary.svg",
+    logoClassName: "h-8 w-auto object-contain",
     description:
       "Technical support and operational solutions for managed print environments and office infrastructure.",
     status: null,
@@ -146,14 +148,12 @@ export default function HomePage() {
                 key={company.name}
                 className="bg-[#F5F5F5] rounded-lg p-8 border border-gray-200 flex flex-col items-start gap-5"
               >
-                <div className="h-16 flex items-center">
-                  <Image
-                    src={company.logo}
-                    alt={company.name}
-                    width={160}
-                    height={64}
-                    className="h-14 w-auto object-contain"
-                  />
+		<div className="min-h-[56px] flex items-center">
+		  <img
+  		     src={company.logo}
+  		     alt={company.name}
+		     className={company.logoClassName}
+		  />
                 </div>
                 {company.status && (
                   <span className="text-xs font-semibold uppercase tracking-widest text-[#C84B3A] bg-[#C84B3A]/10 px-3 py-1 rounded-full">
