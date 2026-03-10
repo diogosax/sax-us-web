@@ -148,7 +148,7 @@ export default function HomePage() {
                 key={company.name}
                 className="bg-[#F5F5F5] rounded-lg p-8 border border-gray-200 flex flex-col items-start gap-5"
               >
-		<div className="min-h-[56px] flex items-center">
+		<div className="min-h-[88px] flex items-center">
 		  <img
   		     src={company.logo}
   		     alt={company.name}
