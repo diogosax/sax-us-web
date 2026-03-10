@@ -35,7 +35,7 @@ const companies = [
   {
     name: "UniHub",
     logo: "/images/brand/unihub/unihub-logo-primary.svg",
-    logoClassName: "h-17 w-auto object-contain",
+    logoClassName: "h-[68px] w-auto object-contain",
     description:
       "An education and international business integration platform supporting cross-border opportunities for academic and professional growth.",
     status: null,
@@ -43,7 +43,7 @@ const companies = [
   {
     name: "Office Today",
     logo: "/images/brand/office-today/office-today-logo-primary.svg",
-    logoClassName: "h-19 w-auto object-contain",
+    logoClassName: "h-[76px] w-auto object-contain",
     description:
       "Technical support and operational solutions for managed print environments and office infrastructure.",
     status: null,
