@@ -27,7 +27,7 @@ const companies = [
   {
     name: "KeepsAlive",
     logo: "/images/brand/keepsalive/keepsalive-logo-primary.svg",
-    logoClassName: "h-7 w-auto object-contain",
+    logoClassName: "h-12 w-auto object-contain",
     description:
       "An asset monitoring and operational intelligence initiative currently in development.",
     status: "Coming Soon",
@@ -35,7 +35,7 @@ const companies = [
   {
     name: "UniHub",
     logo: "/images/brand/unihub/unihub-logo-primary.svg",
-    logoClassName: "h-10 w-auto object-contain",
+    logoClassName: "h-14 w-auto object-contain",
     description:
       "An education and international business integration platform supporting cross-border opportunities for academic and professional growth.",
     status: null,
@@ -43,7 +43,7 @@ const companies = [
   {
     name: "Office Today",
     logo: "/images/brand/office-today/office-today-logo-primary.svg",
-    logoClassName: "h-8 w-auto object-contain",
+    logoClassName: "h-12 w-auto object-contain",
     description:
       "Technical support and operational solutions for managed print environments and office infrastructure.",
     status: null,
