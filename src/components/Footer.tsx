@@ -64,10 +64,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex items-center justify-between border-t border-[#2a2a2a] pt-6 text-xs text-[#777777]">
-          <span>© 2026 SAX Group LLC. All rights reserved.</span>
-          <span>EN | PT</span>
-        </div>
+	<div className="mt-12 flex flex-col gap-3 border-t border-[#2a2a2a] pt-6 text-xs text-[#777777] md:flex-row md:items-center md:justify-between">
+  	  <span>© 2026 SAX Group LLC. All rights reserved.</span>
+  	  <span>Made with ❤️ in Orlando, Florida</span>
+  	  <span>EN | PT</span>
+	</div>
+
       </div>
     </footer>
   );
