@@ -57,13 +57,17 @@ export default function OurCompaniesPage() {
               >
                 {/* Logo */}
                 <div className="h-16 flex items-start">
-                  <Image
-                    src={company.logo}
-                    alt={company.name}
-                    width={180}
-                    height={64}
-                    className="h-14 w-auto object-contain"
-                  />
+		   <Image
+  		     src={company.logo}
+  		     alt={company.name}
+  		     width={180}
+  		     height={64}
+  		     className={
+    		       company.name === "UniHub"
+      		       	 ? "h-[90px] w-auto object-contain"
+      		       	 : "h-14 w-auto object-contain"
+  		     }
+		   />
                 </div>
 
                 {/* Status badge */}
