@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       "SAX Group helps Latin American companies establish and grow their operations in the United States through entity formation, banking coordination, legal and accounting support, and operational setup.",
     url: "https://www.sax-us.com",
+    images: [{ url: "/og/sax-og-image.png" }],
   },
   robots: {
     index: true,
