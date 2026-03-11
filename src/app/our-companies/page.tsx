@@ -12,6 +12,9 @@ export const metadata: Metadata = {
       "Discover the SAX Group ecosystem, including KeepsAlive, UniHub, and Office Today.",
     url: "https://www.sax-us.com/our-companies",
   },
+  alternates: {
+    canonical: "https://www.sax-us.com/our-companies",
+  },
 };
 
 const companies = [

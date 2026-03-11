@@ -10,6 +10,9 @@ export const metadata: Metadata = {
       "Get in touch with SAX Group to discuss your U.S. business expansion and operational support needs.",
     url: "https://www.sax-us.com/contact",
   },
+  alternates: {
+    canonical: "https://www.sax-us.com/contact",
+  },
 };
 
 // TODO: connect form submission

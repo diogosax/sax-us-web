@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     url: "https://www.sax-us.com/pt/sax-global",
     locale: "pt_BR",
   },
+  alternates: {
+    canonical: "https://www.sax-us.com/pt/sax-global",
+  },
 };
 
 const servicos = [

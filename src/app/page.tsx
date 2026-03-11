@@ -11,6 +11,9 @@ export const metadata: Metadata = {
       "SAX Group helps Latin American companies establish and grow their operations in the United States through structure, coordination, and operational support.",
     url: "https://www.sax-us.com",
   },
+  alternates: {
+    canonical: "https://www.sax-us.com/",
+  },
 };
 
 const services = [

@@ -11,6 +11,9 @@ export const metadata: Metadata = {
       "Learn more about SAX Group, our mission, vision, values, and our cross-border business focus between Latin America and the United States.",
     url: "https://www.sax-us.com/about",
   },
+  alternates: {
+    canonical: "https://www.sax-us.com/about",
+  },
 };
 
 const values = [
