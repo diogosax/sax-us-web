@@ -4,9 +4,26 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "SAX Group — U.S. Expansion for Latin American Companies",
+  metadataBase: new URL("https://www.sax-us.com"),
+  title: {
+    default: "SAX Group — U.S. Business Platform for Latin American Companies",
+    template: "%s | SAX Group",
+  },
   description:
-    "SAX Group helps Latin American businesses expand into the United States with company formation, legal, accounting, banking, and operational support.",
+    "SAX Group helps Latin American companies establish and grow their operations in the United States through entity formation, banking coordination, legal and accounting support, and operational setup.",
+  openGraph: {
+    siteName: "SAX Group",
+    type: "website",
+    locale: "en_US",
+    title: "SAX Group — U.S. Business Platform for Latin American Companies",
+    description:
+      "SAX Group helps Latin American companies establish and grow their operations in the United States through entity formation, banking coordination, legal and accounting support, and operational setup.",
+    url: "https://www.sax-us.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

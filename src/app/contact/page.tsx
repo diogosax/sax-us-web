@@ -1,3 +1,17 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact SAX Group",
+  description:
+    "Get in touch with SAX Group to discuss your U.S. business expansion and operational support needs.",
+  openGraph: {
+    title: "Contact SAX Group",
+    description:
+      "Get in touch with SAX Group to discuss your U.S. business expansion and operational support needs.",
+    url: "https://www.sax-us.com/contact",
+  },
+};
+
 // TODO: connect form submission
 
 export default function ContactPage() {
