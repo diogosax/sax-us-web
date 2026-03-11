@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const REQUIRED = ["firstName", "lastName", "email", "message", "inquiryType"];
 
 export async function POST(req: NextRequest) {
@@ -31,12 +29,12 @@ export async function POST(req: NextRequest) {
   }
 
   // Verify reCAPTCHA v3
-  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-  if (secretKey) {
+  const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY;
+  if (recaptchaSecret) {
     const verifyRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: `secret=${secretKey}&response=${body.recaptchaToken ?? ""}`,
+      body: `secret=${recaptchaSecret}&response=${body.recaptchaToken ?? ""}`,
     });
     const verifyData = await verifyRes.json();
     if (!verifyData.success || verifyData.score < 0.5) {
@@ -78,7 +76,16 @@ export async function POST(req: NextRequest) {
 </table>
 `.trim();
 
+  const resendApiKey = process.env.RESEND_API_KEY;
+  if (!resendApiKey) {
+    return NextResponse.json(
+      { error: "Email service is not configured. Please contact us directly." },
+      { status: 500 }
+    );
+  }
+
   try {
+    const resend = new Resend(resendApiKey);
     await resend.emails.send({
       from: "SAX Website <noreply@sax-us.com>",
       to: "contact@sax-us.com",
