@@ -56,7 +56,7 @@ export default function OurCompaniesPage() {
                 className="bg-white rounded-lg border border-gray-200 p-8 flex flex-col gap-6"
               >
                 {/* Logo */}
-                <div className="h-16 flex items-start">
+                <div className="min-h-[96px] flex items-center">
 		   <Image
   		     src={company.logo}
   		     alt={company.name}
