@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Our Companies",
+  description:
+    "Discover the SAX Group ecosystem, including KeepsAlive, UniHub, and Office Today.",
+  openGraph: {
+    title: "Our Companies | SAX Group",
+    description:
+      "Discover the SAX Group ecosystem, including KeepsAlive, UniHub, and Office Today.",
+    url: "https://www.sax-us.com/our-companies",
+  },
+  alternates: {
+    canonical: "https://www.sax-us.com/our-companies",
+  },
+};
 
 const companies = [
   {

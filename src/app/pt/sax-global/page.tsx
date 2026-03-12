@@ -1,4 +1,21 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "SAX Global Brasil",
+  description:
+    "Conheça a SAX Global e como apoiamos empresas latino-americanas na entrada e operação nos Estados Unidos com estrutura societária, coordenação bancária, suporte jurídico-contábil e operação.",
+  openGraph: {
+    title: "SAX Global Brasil | SAX Group",
+    description:
+      "Conheça a SAX Global e como apoiamos empresas latino-americanas na entrada e operação nos Estados Unidos com estrutura societária, coordenação bancária, suporte jurídico-contábil e operação.",
+    url: "https://www.sax-us.com/pt/sax-global",
+    locale: "pt_BR",
+  },
+  alternates: {
+    canonical: "https://www.sax-us.com/pt/sax-global",
+  },
+};
 
 const servicos = [
   {

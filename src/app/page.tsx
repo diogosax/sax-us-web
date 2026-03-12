@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "SAX Group | U.S. Business Platform for Latin American Companies",
+  description:
+    "SAX Group helps Latin American companies establish and grow their operations in the United States through structure, coordination, and operational support.",
+  openGraph: {
+    title: "SAX Group | U.S. Business Platform for Latin American Companies",
+    description:
+      "SAX Group helps Latin American companies establish and grow their operations in the United States through structure, coordination, and operational support.",
+    url: "https://www.sax-us.com",
+  },
+  alternates: {
+    canonical: "https://www.sax-us.com/",
+  },
+};
 
 const services = [
   {
