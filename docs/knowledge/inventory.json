@@ -1,0 +1,42 @@
+{
+  "repository": "diogosax/sax-us-web",
+  "base_branch": "main",
+  "source_commit": "86e5bdb91082bf5756f149aa3c443a1c7d4f86c6",
+  "inspected_on": "2026-11-02",
+  "documents": [
+    {
+      "path": "BRAND_SYSTEM.md",
+      "sha256": "d990f98d5de57f3a0e50db2374e3b0c48c610d383b89274611e995d972c3767a"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "7054a4371f414220017c461748b29c2b71e5860d90287bdb26970a791a4e8876"
+    },
+    {
+      "path": "README.md",
+      "sha256": "60b55ff7df79af72590f9524208e46642bc32bdc175cdad41349681c0e2f958f"
+    },
+    {
+      "path": "SITE_STRUCTURE.md",
+      "sha256": "d4a569efc2347f04c13a8cecc06c1b6f8bde7c941199594e4cf269cfd4622e39"
+    }
+  ],
+  "packages": {
+    "package.json": {
+      "name": "temp-site",
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint"
+      },
+      "dependencies": {
+        "@vercel/analytics": "^2.0.0",
+        "next": "16.1.6",
+        "react": "19.2.3",
+        "react-dom": "19.2.3",
+        "resend": "^6.9.3"
+      }
+    }
+  }
+}
