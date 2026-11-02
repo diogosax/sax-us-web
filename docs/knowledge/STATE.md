@@ -1,32 +1,38 @@
-# Estado observado em 2026-11-02
+# Observed state — 2026-11-02
 
-## Snapshot verificável
+## Verifiable source snapshot
 
-- Repositório: `diogosax/sax-us-web`.
-- Branch-base: `main`.
-- Commit inspecionado: [`86e5bdb91082`](https://github.com/diogosax/sax-us-web/commit/86e5bdb91082bf5756f149aa3c443a1c7d4f86c6).
-- Inspeção: arquivos versionados e documentação, sem deploy, execução de aplicação ou validação em produção.
+- Repository: `diogosax/sax-us-web`.
+- Base branch: `main`.
+- Inspected source commit: [`86e5bdb91082`](https://github.com/diogosax/sax-us-web/commit/86e5bdb91082bf5756f149aa3c443a1c7d4f86c6).
+- Inspection scope: tracked files and documentation, without application execution, deployment or production validation.
+- The source commit predates the knowledge-base commits. Do not assume it is always the immediate parent of the current HEAD after documentation revisions.
 
-## O que foi observado
+## Observations
 
-Aplicação Next.js com instruções específicas em CLAUDE.md, sistema de marca e estrutura do site. README inicial é boilerplate e não substitui esses documentos.
+Next.js application with project-specific instructions in CLAUDE.md, brand system and site structure. The initial README is framework boilerplate and does not replace those sources.
 
-Pastas técnicas de primeiro nível observadas: `public/`, `src/`.
+Observed first-level technical directories: `public/`, `src/`.
 
-## Fontes prioritárias
+## Priority sources
 
 - [`CLAUDE.md`](../../CLAUDE.md)
 - [`BRAND_SYSTEM.md`](../../BRAND_SYSTEM.md)
 - [`SITE_STRUCTURE.md`](../../SITE_STRUCTURE.md)
 - [`README.md`](../../README.md)
 
-## Lacunas e verificação pendente
+## Gaps and pending checks
 
-- Revalidar branch e alterações locais antes de continuar; este snapshot não acompanha automaticamente mudanças futuras.
-- Fluxos reais, infraestrutura ativa, DNS, credenciais e clientes não foram auditados.
-- Avaliar cada capacidade contra código + testes + evidência operacional atual, especialmente quando README e incrementos divergem.
-- Comparar branches/PRs abertos antes de concluir que falta implementação. O inventário desta base usa a branch-base, não todas as branches.
+- Recheck branch and local changes before resuming; this snapshot does not automatically track later work.
+- Live workflows, active infrastructure, DNS, credentials and customers were not audited.
+- Assess each capability against code, relevant tests and current operational evidence, especially where historical README passages and later increments differ.
+- Compare relevant branches and open PRs before concluding that implementation is missing. This inventory covers the recorded base branch, not every branch.
+- inventory.json indexes documentation and package manifests; it is not the product's asset inventory.
 
-## Resultado desta entrega
+## Fresh-conversation comprehension test
 
-Base de contexto e adaptadores de leitura preparados. Nenhuma funcionalidade do produto foi alterada. Prioridade de desenvolvimento entre projetos ainda será decidida com o proprietário.
+Not yet performed for this project. The KeepsAlive workspace test does not validate this repository.
+
+## This delivery
+
+Shared technical context and assistant entry points are in English. Existing historical/project instructions are preserved. No product functionality was changed. Development priority across projects remains an owner decision.
